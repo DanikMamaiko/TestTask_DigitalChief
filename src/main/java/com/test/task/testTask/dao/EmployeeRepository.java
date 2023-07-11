@@ -1,18 +1,14 @@
 package com.test.task.testTask.dao;
 
+
 import com.test.task.testTask.entities.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
-import java.util.List;
-public interface EmployeeRepository {
+import org.springframework.stereotype.Repository;
 
-    public List<Employee> getAllEmployees();
+import java.util.Optional;
 
-    public void saveEmployee(Employee employee);
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
-    public Employee showEmployee(int id);
-
-    public void deleteEmployee(int id);
-
-    public void updateEmployee(Employee employee);
-
+    Optional <Employee> findByName(String name);
 }

@@ -1,4 +1,4 @@
-package com.test.task.testTask.service;
+package com.test.task.testTask.service.interf;
 
 import com.test.task.testTask.entities.Employee;
 
@@ -12,7 +12,7 @@ public interface EmployeeService {
 
     public Employee showEmployee(int id);
 
-    public Employee updateEmployee(Employee employee);
+    public void updateEmployee(Employee employee);
 
     public void deleteEmployee(int id);
 }

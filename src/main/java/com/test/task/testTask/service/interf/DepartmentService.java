@@ -1,4 +1,4 @@
-package com.test.task.testTask.service;
+package com.test.task.testTask.service.interf;
 
 import com.test.task.testTask.entities.Department;
 import org.springframework.stereotype.Service;

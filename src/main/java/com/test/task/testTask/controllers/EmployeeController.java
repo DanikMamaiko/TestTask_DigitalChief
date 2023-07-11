@@ -1,7 +1,7 @@
 package com.test.task.testTask.controllers;
 
 import com.test.task.testTask.entities.Employee;
-import com.test.task.testTask.service.EmployeeService;
+import com.test.task.testTask.service.interf.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

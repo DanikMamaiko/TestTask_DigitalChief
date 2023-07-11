@@ -1,19 +1,15 @@
 package com.test.task.testTask.dao;
 
 import com.test.task.testTask.entities.Department;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import java.util.Optional;
 
-public interface DepartmentRepository {
 
-    public List<Department> getAllDepartments();
+@Repository
+public interface DepartmentRepository extends JpaRepository<Department, Integer> {
 
-    public void saveDepartment(Department department);
-
-    public Department showDepartment(int id);
-
-    public void deleteDepartment(int id);
-
-    public void updateDepartment(Department department);
+    Optional<Department> findByName(String name);
 
 }

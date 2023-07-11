@@ -1,7 +1,6 @@
 package com.test.task.testTask.dao;
 
 import com.test.task.testTask.entities.Department;
-import com.test.task.testTask.entities.Employee;
 
 import java.util.List;
 

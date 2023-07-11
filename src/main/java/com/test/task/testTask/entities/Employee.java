@@ -28,7 +28,6 @@ public class Employee {
     int salary;
 
     @JsonIgnore
-//    @ManyToOne(cascade = CascadeType.ALL)
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="department_id")
     private Department department;

@@ -1,6 +1,5 @@
 package com.test.task.testTask.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -30,8 +29,6 @@ public class Department {
     @Column(name="max_salary")
     int maxSalary;
 
-    @JsonIgnore
-//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "department")
     @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH}, mappedBy = "department")
     List<Employee> emps;
 

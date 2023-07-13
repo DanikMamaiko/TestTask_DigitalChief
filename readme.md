@@ -33,7 +33,7 @@ Employees атрибуты: имя работника,
 1. Запустить Docker Desktop
 2. Запустить приложение
 3. Проверка работы приложения (Файл endpoints.md)
-4. 
+
     Для подключения к phpmyadmin и просмотра базы данных использовать localhost:8081
     Login: spring_user
     Password: spring_password

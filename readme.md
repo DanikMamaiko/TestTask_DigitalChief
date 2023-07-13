@@ -13,6 +13,9 @@
 Зависимость lombok:
 уменьшает написания кода (getters, setters, constructors, HashCode, toString)
 
+Зависимость spring-boot-docker-compose
+для работы с Docker
+
 Создаются две сущности: Departments & Employees
 Тип связи: Один ко Многим
 
@@ -27,9 +30,11 @@ Employees атрибуты: имя работника,
 ключ для подключения к Departments
 
 Пошаговые инструкции для сборки и запуска приложения:
-1. Создать базу данных test_db с помощью PhpMyAdmin
+1. Запустить Docker Desktop
 2. Запустить приложение
 3. Проверка работы приложения (Файл endpoints.md)
-
-Программа готова к запуску
+4. 
+    Для подключения к phpmyadmin и просмотра базы данных использовать localhost:8081
+    Login: spring_user
+    Password: spring_password
 

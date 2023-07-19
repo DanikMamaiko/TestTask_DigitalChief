@@ -1,3 +1,6 @@
+Drop table employees;
+Drop table departments;
+
 CREATE TABLE departments (
   id int NOT NULL AUTO_INCREMENT,
   name varchar(15),

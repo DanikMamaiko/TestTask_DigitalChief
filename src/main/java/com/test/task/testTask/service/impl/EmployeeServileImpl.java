@@ -24,6 +24,7 @@ public class EmployeeServileImpl implements EmployeeService {
     }
 
     @Override
+    @Transactional
     public void saveEmployee(Employee employee) {
         employeeRepository.save(employee);
     }

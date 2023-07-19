@@ -38,3 +38,5 @@ Employees атрибуты: имя работника,
     Login: spring_user
     Password: spring_password
 
+Если не работает через Docker, используйте pgAdmin и настройку applicaiton.properties
+
